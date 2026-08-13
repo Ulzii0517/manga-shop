@@ -117,7 +117,7 @@ const RegisterForm = ({ className, ...props }) => {
                   disabled={loading}
                   className="bg-linear-to-r from-indigo-500 to-purple-600 hover:opacity-90"
                 >
-                  {loading ? "Бүртгэл үүсгэж байна.." : "Бүргүүлэх"}
+                  {loading ? "Бүртгэл үүсгэж байна.." : "Бүртгүүлэх"}
                 </Button>
               </Field>
 

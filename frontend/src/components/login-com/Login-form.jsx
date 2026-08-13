@@ -79,7 +79,7 @@ const LoginForm = ({ className, ...props }) => {
       }, 200);
     } catch (err) {
       toast.error(
-        err.response?.data?.error?.message || "Серверт холбогдож чадсангүй",
+        err.response?.data?.error?.message || "Имэйл болон нууц үг буруу байна",
       );
       setLoading(false);
     }
