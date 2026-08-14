@@ -1,13 +1,12 @@
 {
   "name": "amazone_api",
   "version": "1.0.0",
-  "description": "bookstore rest api",
+  "description": "Amazone bookstore rest api",
   "main": "server.js",
   "type": "module",
   "scripts": {
     "start": "NODE_ENV=production node server",
-    "dev": "nodemon server",
-    "test": "NODE_ENV=test node --experimental-vm-modules node_modules/.bin/jest"
+    "dev": "nodemon server"
   },
   "author": "",
   "license": "ISC",
@@ -28,20 +27,13 @@
     "mongodb": "^6.18.0",
     "mongoose": "^8.18.0",
     "morgan": "^1.10.1",
-    "nodemailer": "^9.0.5",
+    "nodemailer": "^7.0.6",
     "rotating-file-stream": "^2.1.6",
     "transliteration": "^2.1.8",
     "xss-clean": "^0.1.4"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.5",
     "@types/dotenv": "^6.1.1",
-    "eslint": "^9.39.5",
-    "eslint-plugin-jest": "^29.16.1",
-    "globals": "^17.11.0",
-    "jest": "^30.4.2",
-    "mongodb-memory-server": "^10.4.3",
-    "nodemon": "^3.1.10",
-    "supertest": "^7.2.2"
+    "nodemon": "^3.1.10"
   }
 }
