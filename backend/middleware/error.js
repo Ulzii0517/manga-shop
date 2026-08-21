@@ -8,7 +8,7 @@ const errorHandler = (err, req, res, next) => {
   }
 
   if (err.name === "JsonWebTokenError" && err.message === "jwt malformed") {
-    error.message = "Та нэтэрч байж энэ үйлдлийг хийх боломжтой!";
+    error.message = "Та нэвтэрч байж энэ үйлдлийг хийх боломжтой!";
     error.statusCode = 401;
   }
 
@@ -17,7 +17,7 @@ const errorHandler = (err, req, res, next) => {
     error.statusCode = 400;
   }
 
-  res.status(err.statusCode || 500).json({
+  res.status(error.statusCode || 500).json({
     success: false,
     error: error.message,
   });
